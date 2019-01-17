@@ -22,7 +22,7 @@ namespace EPiserverCafe.Controllers
             pages.Add(startPage);
             pages.AddRange(loader.GetChildren<SitePageBase>(ContentReference.StartPage));
 
-            var model = new PageViewModel<T>()
+            var model = new PageViewModel<T>(startPage)
             {
                 TopMenuPages = pages
             };

@@ -4,10 +4,12 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.SpecializedProperties;
+using EPiserverCafe.Business;
 
 namespace EPiserverCafe.Models.Pages
 {
-    [ContentType(DisplayName = "StartPage", GUID = "0dafc953-c4d0-4a67-b057-fd949aba1899", Description = "")]
+    [ContentType(DisplayName = "Start Page",
+                 GUID = "0dafc953-c4d0-4a67-b057-fd949aba1899", Description = "")]
     public class StartPage : SitePageBase
     {
         /*
@@ -19,5 +21,7 @@ namespace EPiserverCafe.Models.Pages
                     Order = 1)]
                 public virtual XhtmlString MainBody { get; set; }
          */
+        [Display(GroupName = GroupNames.SiteSettings, Order = 1400)]
+        public virtual string SiteFooter { get; set; }
     }
 }

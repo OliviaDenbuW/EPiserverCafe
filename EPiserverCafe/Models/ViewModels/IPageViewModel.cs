@@ -9,6 +9,8 @@ namespace EPiserverCafe.Models.ViewModels
 {
     public interface IPageViewModel<out T> where T : SitePageBase
     {
+        StartPage StartPage { get; }
+
         IList<SitePageBase> TopMenuPages { get; }
     }
 }
