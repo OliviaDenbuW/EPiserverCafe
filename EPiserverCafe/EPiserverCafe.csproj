@@ -283,6 +283,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\StartPage\Index.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_TopNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

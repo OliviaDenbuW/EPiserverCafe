@@ -1,0 +1,21 @@
+﻿@*@model EpiserverInlämning.Models.ViewModels.IPageViewModel<EpiserverInlämning.Models.Pages.SitePageBase>*@
+
+
+<ul>
+    @*@foreach (var page in Model.TopMenuPages)
+    {
+        <li>@Html.ContentLink(page)</li>
+    }*@
+    <li class="last"><a href="#">Link text</a><span>Test Text Here</span></li>
+        <li>
+            <a href="#">DropDown</a><span>Test Text Here</span>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </li>
+        <li><a href="pages/full-width.html">Full Width</a><span>Test Text Here</span></li>
+        <li><a href="pages/style-demo.html">Style Demo</a><span>Test Text Here</span></li>
+        <li class="active"><a href="index.html">Homepage</a><span>Test Text Here</span></li>
+</ul>
