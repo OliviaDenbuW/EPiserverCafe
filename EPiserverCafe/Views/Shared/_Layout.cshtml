@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model EPiserverCafe.Models.ViewModels.IPageViewModel<EPiserverCafe.Models.Pages.SitePageBase>
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Prestigious</title>
@@ -21,7 +23,7 @@
     <div class="wrapper col2">
         <div id="header">
             <div id="topnav">
-                @Html.Partial("_TopNavigation"@*, Model*@)
+                @Html.Partial("_TopNavigation", Model)
             </div>
             <div id="logo">
                 <h1><a href="index.html">Prestigious</a></h1>
