@@ -1,28 +1,33 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <title>Prestigious</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/static/layout/styles/layout.css" type="text/css" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="wrapper col1">
+        <div id="topbar">
+            <p>Tel: xxxxx xxxxxxxxxx | Mail: info@domain.com</p>
+            <ul>
+                <li><a href="#">Libero</a></li>
+                <li><a href="#">Maecenas</a></li>
+                <li><a href="#">Mauris</a></li>
+                <li class="last"><a href="#">Suspendisse</a></li>
+            </ul>
+            <br class="clear" />
+        </div>
+    </div>
+    <div class="wrapper col2">
+        <div id="header">
+            <div id="topnav">
+                @*@Html.Partial("_TopNavigation", Model)*@
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+            <div id="logo">
+                <h1><a href="index.html">Prestigious</a></h1>
+                <p>Free Website Template</p>
             </div>
+            <br class="clear" />
         </div>
     </div>
 
@@ -30,6 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
+            @*@Html.Partial("_Footer")*@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
