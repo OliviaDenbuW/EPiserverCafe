@@ -9,7 +9,9 @@ using EPiserverCafe.Business;
 namespace EPiserverCafe.Models.Pages
 {
     [ContentType(DisplayName = "Start Page",
-                 GUID = "0dafc953-c4d0-4a67-b057-fd949aba1899", Description = "")]
+                 GUID = "0dafc953-c4d0-4a67-b057-fd949aba1899",
+                 Description = "")]
+    [SiteStartIcon]
     public class StartPage : SitePageBase
     {
         /*
@@ -26,6 +28,10 @@ namespace EPiserverCafe.Models.Pages
 
         [Display(GroupName = GroupNames.SiteSettings, Order = 100)]
         public virtual string SiteBrand { get; set; }
+
+        //[Display(GroupName = GroupNames.SiteSettings, Order = 400)]
+        //[AllowedTypes(typeof(ImageData))]
+        //public virtual ContentReference SiteBackgroundImage { get; set; }
 
         [Display(GroupName = GroupNames.SiteSettings, Order = 1400)]
         public virtual string SiteFooter { get; set; }
