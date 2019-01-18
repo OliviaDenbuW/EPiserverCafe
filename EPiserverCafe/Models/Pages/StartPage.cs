@@ -21,7 +21,15 @@ namespace EPiserverCafe.Models.Pages
                     Order = 1)]
                 public virtual XhtmlString MainBody { get; set; }
          */
+
+        #region SiteSettings
+
+        [Display(GroupName = GroupNames.SiteSettings, Order = 100)]
+        public virtual string SiteBrand { get; set; }
+
         [Display(GroupName = GroupNames.SiteSettings, Order = 1400)]
         public virtual string SiteFooter { get; set; }
+
+        #endregion
     }
 }

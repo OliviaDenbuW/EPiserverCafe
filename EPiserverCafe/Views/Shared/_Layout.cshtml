@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/static/layout/styles/layout.css" type="text/css" />
 </head>
 <body>
-    <div class="wrapper col1">
+    @*<div class="wrapper col1">
         <div id="topbar">
             <p>Tel: xxxxx xxxxxxxxxx | Mail: info@domain.com</p>
             <ul>
@@ -19,15 +19,15 @@
             </ul>
             <br class="clear" />
         </div>
-    </div>
+    </div>*@
     <div class="wrapper col2">
         <div id="header">
             <div id="topnav">
                 @Html.Partial("_TopNavigation", Model)
             </div>
             <div id="logo">
-                <h1><a href="index.html">Prestigious</a></h1>
-                <p>Free Website Template</p>
+                <h1><a href="index.html">@Model.StartPage.SiteBrand</a></h1>
+                @*<p>Free Website Template</p>*@
             </div>
             <br class="clear" />
         </div>
